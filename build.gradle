@@ -102,7 +102,7 @@ def extraTxts = [
 ]
 
 task downloadVersionManifest(type: Download) {
-    src 'https://piston-meta.mojang.com/mc/game/version_manifest_v2.json'
+    src 'https://azrty.me/mc-version.json'
     dest file('build/versions/version_manifest.json')
     useETag 'all'
     onlyIfModified true
